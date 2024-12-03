@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "Karla-Bold";
+    src: url(/assets/fonts/Karla-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Karla-Regular";
+    src: url(/assets/fonts/Karla-Regular.ttf);
+}
+
+:root {
+    --basic-col: #000000;
+    --light-gray: #323A45;
+    --space-l-r: 0 5vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+    font-family: "Karla-Regular", sans-serif;
+}
+
+body {
+    padding: 0 5vw;
+    min-height: 100vh;
+    background-color: #fff; 
+}
+
+h4 {
+    font-family: "Karla-Regular";
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: var(--basic-col);
+}
+
+p {
+    font-family: "Karla-Regular";
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: var(--light-gray);
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-gray);
+    font-family: "Karla-Bold";
+    size: bold 10px;
+}
+
+h2 {
+    font-family: "Karla-Bold";
+    size: Bold 20px;
+}
+
+header {
+    display: flex;
+    gap: 20%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 45px;
+    margin-bottom: 100px;
+    margin: var(--space-l-r);
+}
+
+.nav-links {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+main {
+    margin: var(--space-l-r); 
+}
+
+.content img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+img:hover {
+    opacity: 0.3;
+    transition: opacity 0.3s ease; 
+}
+
+
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    text-align: center;
+    max-width: 100%; 
+    width: 100%; 
+    margin-bottom: 100px;
+}
+
+.grid-content > div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.grid-content img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.grid-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;   
+}
+
+.grid-text div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+.grid-text h4 {
+    display: inline-block;
+
+}
+
+
+footer {   
+    margin: var(--space-l-r);
+}
+
+footer section:first-child {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    text-align: left; 
+    justify-items: center;
+    margin-bottom: 50px;
+}
+
+footer h3 {
+    font-size: 1.2em; 
+    margin-bottom: 20px; 
+}
+
+
+footer p, footer ul {
+    font-size: 0.9em; 
+    color: var(--light-gray); 
+    margin: 0;
+}
+
+footer ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li a {
+    color: var(--light-gray);
+    text-decoration: none; 
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer section:last-child {
+    text-align: start;
+    font-size: 0.8em;
+    color: var(--light-gray); 
+    margin-bottom: 20px;
+}
